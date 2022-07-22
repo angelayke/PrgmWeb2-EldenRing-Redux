@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 //On importe le hook useParams de React Router
 import { useParams } from 'react-router-dom';
 import EldenService from '../service/EldenService';
+import EldenCard from './EldenCard';
 
 const eS =  new EldenService();
 
@@ -19,4 +20,14 @@ const IndividualEldenring = () => {
         getEldenringById();
     }, [params]);
 
+    if (!eldenring) {
+        return null;
+    }
+
+    return (
+        <EldenCard eldenring={eldenring}></EldenCard>
+    )
+
 }
+
+export default IndividualEldenring;

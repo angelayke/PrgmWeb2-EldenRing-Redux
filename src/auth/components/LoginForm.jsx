@@ -37,8 +37,8 @@ const LoginForm = () => {
     }
         
     return (
-        <Container>
-            <Container>
+        <Container fluid className="vh-100">
+            <Container className="h-100 d-flex justify-content-center align-items-center">
                 <Form onSubmit={onSubmit}>
                     <Row>
                         <Col>

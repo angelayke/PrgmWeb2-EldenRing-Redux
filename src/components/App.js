@@ -7,12 +7,12 @@ import IndividualEldenring from '../eldenring/components/IndividualEldenring';
 function App() {
   return (
     <BrowserRouter>
-    <Container>
-      <Routes>
-        <Route path="/eldenring" element={<Eldenrings />} />
-        <Route path="/eldenring/:id" element={<IndividualEldenring />} />
-      </Routes>
-    </Container>
+      <Container>
+        <Routes>
+          <Route path="/eldenring" element={<Eldenrings />} />
+          <Route path="/eldenring/:id" element={<IndividualEldenring />} />
+        </Routes>
+      </Container>
     </BrowserRouter>
   );
 }
